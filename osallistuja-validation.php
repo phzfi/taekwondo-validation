@@ -1,9 +1,12 @@
 <?php
-
 /**
  * Plugin Name: Osallistuja Validation
- * Description: Server-side validation for the osallistuja field.
+ * Description: Server-side validation for the ilmoittautumislomake form.
+ * Version: 1.0.0
+ * Author: PHZ
  */
+
+defined('ABSPATH') || exit;
 
 add_filter(
     'wpcf7_validate_text',
