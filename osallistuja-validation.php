@@ -36,7 +36,7 @@ function validate_osallistuja_name($result, $tag)
 
     if (
         $value === '' ||
-        preg_match('/^[\p{L} -]+$/u', $value)
+        !preg_match('/^[\p{L} -]+$/u', $value)
     ) {
         $result->invalidate(
             $tag,
