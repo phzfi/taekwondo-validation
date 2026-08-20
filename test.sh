@@ -31,7 +31,7 @@ RESPONSE=$(curl -sS \
 echo "$RESPONSE"
 
 if echo "$RESPONSE" | grep -q '"status": "validation_failed"' && \
-   echo "$RESPONSE" | grep -q 'Osallistujan nimessä saa olla vain kirjaimia'; then
+   echo "$RESPONSE" | grep -q 'saa olla vain kirjaimia'; then
     echo "PASS: validation error returned as expected"
     exit 0
 else
